@@ -13,3 +13,15 @@ md-toolbar {
   vertical-align: middle;
   margin-right: 5;
 }
+
+.content{
+  padding: 2em;
+}
+
+.job-success{
+  background: linear-gradient(to right,#39aa56 0,#39aa56 5px,#fff 5px,#fff 100%) no-repeat;
+}
+
+.job-fail{
+  background: linear-gradient(to right,#db4545 0,#db4545 5px,#fff 5px,#fff 100%) no-repeat;
+}
