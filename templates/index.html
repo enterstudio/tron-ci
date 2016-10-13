@@ -4,6 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href='{{ url_for("static", filename="components/angular-material/angular-material.min.css") }}'>
   <link rel="stylesheet" href='{{ url_for("static", filename="css/tron.css") }}'>
+  <link rel="stylesheet" href='{{ url_for("static", filename="components/font-awesome/css/font-awesome.min.css") }}'>
   <script src='{{ url_for("static", filename="components/angular/angular.min.js") }}'></script>
   <script src='{{ url_for("static", filename="components/angular-animate/angular-animate.min.js") }}'></script>
   <script src='{{ url_for("static", filename="components/angular-aria/angular-aria.min.js") }}'></script>
@@ -11,6 +12,7 @@
   <script src='{{ url_for("static", filename="components/angular-cron-jobs/dist/angular-cron-jobs.min.js") }}'></script>
   <script src='{{ url_for("static", filename="components/angular-material/angular-material.min.js") }}'></script>
   <script src='{{ url_for("static", filename="components/satellizer/satellizer.min.js") }}'></script>
+
 </head>
 
 <body ng-app='tronApp' ng-cloak>
@@ -32,18 +34,17 @@
       <div flex="25" layout="column" ng-repeat="i in [1, 2, 3, 4, 5, 6, 7, 8]">
         <md-card md-theme="dark-blue" md-theme-watch class="job-success">
 
-          <md-card-title>
+          <md-card-title class="job-title">
             <md-card-title-text>
-              <span class="md-headline">menegazzo/tron-ci</span>
+              <span class="md-headline job-headline">menegazzo/tron-ci</span>
             </md-card-title-text>
           </md-card-title>
-          <md-divider></md-divider>
-          <md-card-content>
+          <md-card-content class="job-content">
             <span>0 */12 * * *</span>
           </md-card-content>
-          <md-divider></md-divider>
-          <md-card-footer>
-            Card footer
+          <md-card-footer class="job-footer">
+            <span>Will start in Januray 1st at 08:42:02</span>
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
           </md-card-footer>
 
         </md-card>

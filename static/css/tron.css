@@ -25,3 +25,26 @@ md-toolbar {
 .job-fail{
   background: linear-gradient(to right,#db4545 0,#db4545 5px,#fff 5px,#fff 100%) no-repeat;
 }
+
+.job-title{
+  padding: 0 16px 16px !important;
+}
+
+.job-headline{
+  color: #39aa56 !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+}
+
+.job-content{
+  text-align: center;
+}
+
+.job-content span{
+  font-size: 24px;
+}
+
+.job-footer{
+  font-size: 12px;
+  text-align: right;
+}
